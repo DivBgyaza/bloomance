@@ -56,6 +56,8 @@ body{font-size:var(--text-body)}
 .modal-copy h4{font-size:11px}
 @media(max-width:680px){
   .announcement{font-size:10px}
+  .header-cta{padding:10px;font-size:0;gap:0}
+  .header-cta svg{width:17px;height:17px}
   .nav a{font-size:16px}
   .eyebrow{font-size:9px}
   .hero-copy>p,.story-copy>p,.ritual-head>p,.products-head>p,.contact-copy>p{font-size:15px;line-height:1.8}
