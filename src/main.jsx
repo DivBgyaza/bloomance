@@ -14,7 +14,7 @@ const products = [
   { name: 'Leave-in Conditioner', type: 'Hibiscus & flaxseed', image: '/images/leave-in-conditioner.jpeg', number: '04', note: 'Moisturise · Soften · Detangle', text: 'A lightweight leave-in conditioner formulated with hibiscus and flaxseed to hydrate, detangle and soften. Helps hair feel smooth, manageable and cared for without the weight.', ingredients: 'Hibiscus, flaxseed, aqua, glycerin, panthenol (pro-vitamin B5), polyquaternium-7, cetyl alcohol, BTMS, hydrolyzed silk protein, vitamin E, nourishing oil blends, fragrance and preservative.', how: 'Apply to clean, damp hair, focusing on mid-lengths and ends. Do not rinse. Style as desired.' },
 ];
 
-function Mark({ light = false }) { return <a className={`wordmark ${light ? 'wordmark-light' : ''}`} href="#home" aria-label="Bloomance home"><span className="mark-icon">B<span>✿</span></span><span className="mark-name">BLOOMANCE</span><span className="mark-tag">BLOOM WITH CONFIDENCE</span></a>; }
+function Mark({ light = false }) { return <a className={`wordmark ${light ? 'wordmark-light' : ''}`} href="#home" aria-label="Bloomance home"><span className="mark-icon"><img className="brand-emblem" src="/images/bloomance-emblem.png" alt="" /></span><span className="mark-name">BLOOMANCE</span><span className="mark-tag">BLOOM WITH CONFIDENCE</span></a>; }
 
 function App() {
   const [active, setActive] = useState(null);
