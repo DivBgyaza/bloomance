@@ -19,3 +19,56 @@
 .modal-copy .modal-small{font-size:13px;line-height:1.8}
 .modal-copy .button{font-size:11px}
 @media(max-width:680px){.product-meta h3{font-size:21px}.product-type{font-size:7px}.product-note{font-size:9px;line-height:1.55}.modal-image{height:clamp(200px,38vh,290px)}.modal-copy{padding:27px 22px 31px}.modal-copy h2{font-size:35px}.modal-copy>p{font-size:12px}.modal-copy .modal-small{font-size:11px}.modal-copy h4{font-size:9px}}
+
+/* Keep the product image and its written details in separate, scrollable blocks. */
+.modal{display:flex;flex-direction:column;max-height:92vh;overflow-y:auto;overflow-x:hidden}
+.modal-image{flex:0 0 auto;height:min(40vh,360px);min-height:220px;overflow:hidden}
+.modal-image img{display:block;max-width:100%;max-height:100%;object-fit:contain}
+.modal-copy{position:relative;flex:0 0 auto;background:var(--paper)}
+.modal-copy>p{font-size:15px;line-height:1.85}
+.modal-copy .modal-small{font-size:14px;line-height:1.85}
+.product-note{font-size:12px}
+.story-copy>p,.ritual-head>p,.products-head>p{font-size:14px}
+.ritual-steps p{font-size:12px;line-height:1.8}
+@media(max-width:680px){.modal-image{height:32vh;min-height:190px}.modal-copy>p{font-size:13px}.modal-copy .modal-small{font-size:12px}.product-note{font-size:10px}.story-copy>p,.ritual-head>p,.products-head>p{font-size:12px}.ritual-steps p{font-size:10px}}
+
+/* Consistent, readable type scale across every section and screen size. */
+:root{--text-body:16px;--text-small:13px;--text-label:11px}
+body{font-size:var(--text-body)}
+.announcement{font-size:12px}
+.nav a{font-size:15px}
+.header-cta{font-size:14px}
+.eyebrow{font-size:11px}
+.hero-copy>p,.story-copy>p,.ritual-head>p,.products-head>p,.contact-copy>p{font-size:17px;line-height:1.8}
+.button{font-size:14px}
+.text-link{font-size:14px}
+.hero-note{font-size:11px}
+.values span{font-size:10px}
+.ritual-steps p{font-size:15px;line-height:1.75}
+.step-product{font-size:10px}
+.product-type{font-size:12px}
+.product-note{font-size:15px;line-height:1.6}
+.product-meta h3{font-size:29px}
+.quote>span:last-child,.socials>span{font-size:10px}
+.footer-motto,.copyright,.back-top{font-size:10px}
+.modal-copy>p{font-size:17px}
+.modal-copy .modal-small{font-size:15px;line-height:1.8}
+.modal-copy h4{font-size:11px}
+@media(max-width:680px){
+  .announcement{font-size:10px}
+  .nav a{font-size:16px}
+  .eyebrow{font-size:9px}
+  .hero-copy>p,.story-copy>p,.ritual-head>p,.products-head>p,.contact-copy>p{font-size:15px;line-height:1.8}
+  .button,.text-link{font-size:13px}
+  .hero-note{font-size:10px}
+  .values span{font-size:9px}
+  .ritual-steps p{font-size:13px;line-height:1.7}
+  .step-product{font-size:9px}
+  .product-type{font-size:10px}
+  .product-note{font-size:13px;line-height:1.6}
+  .product-meta h3{font-size:23px}
+  .quote>span:last-child,.socials>span,.footer-motto,.copyright,.back-top{font-size:9px}
+  .modal-copy>p{font-size:15px}
+  .modal-copy .modal-small{font-size:13px}
+  .modal-copy h4{font-size:10px}
+}
