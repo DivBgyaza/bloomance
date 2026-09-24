@@ -85,3 +85,9 @@ body{font-size:var(--text-body)}
 .product-price{font-size:18px;margin:4px 0 0}
 .modal-copy .modal-price{font-size:23px;margin:-10px 0 16px}
 @media(max-width:680px){.product-price{font-size:16px}.modal-copy .modal-price{font-size:21px}}
+
+.founder-note{margin:25px 0 19px;padding:19px 21px;border-left:2px solid var(--pink);background:#f3e8e4}
+.founder-label{font-size:10px;letter-spacing:.15em;font-weight:700;color:var(--wine)}
+.founder-note h3{font:600 27px/1.15 var(--serif);color:var(--wine);margin:8px 0}
+.founder-note p{font-size:15px;line-height:1.7;color:var(--muted);margin:0}
+@media(max-width:680px){.founder-note{margin:21px 0 17px;padding:16px}.founder-note p{font-size:14px}.founder-note h3{font-size:24px}}
